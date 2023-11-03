@@ -1,0 +1,3 @@
+[submodule "connectors"]
+	path = connectors
+	url = git@github.com:OpenCTI-Platform/connectors.git
