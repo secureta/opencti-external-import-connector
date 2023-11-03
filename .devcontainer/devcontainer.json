@@ -1,0 +1,13 @@
+{
+  name: "OpenCTI External Import Connector",
+  dockerComposeFile: "./docker-compose.yml",
+  "service": "workspace",
+  "workspaceFolder": "/usr/local/src/workspace",
+  mounts: [
+    {
+      "type": "volume",
+      "source": "workspace-venv",
+      "target":"${containerWorkspaceFolder}/venv"
+    }
+  ]
+}
